@@ -96,11 +96,11 @@ def _allocation_curves(daily, drawdowns=False):
     selected = daily.loc[daily["strategy"].isin(MODELS)]
     nav = selected.pivot(index="date", columns="strategy", values="nav").sort_index()
     if drawdowns:
-        title = "V2 allocation drawdowns"
-        subtitle = "Reported net drawdown from inception  |  The V2 overlay uses a separate trailing 252-session peak"
+        title = "Underwater Drawdowns Across Allocation Models"
+        subtitle = "Reported net drawdown from inception  |  Risk overlay tracks a separate trailing 252-session peak"
         nav = nav.div(nav.cummax().clip(lower=1.0)) - 1
     else:
-        title = "V2 net performance of six allocation models"
+        title = "Net Performance of Six Multi-Asset Allocation Models"
         subtitle = f"Growth of CNY 1 after trading costs  |  {nav.index.min():%b %Y} to {nav.index.max():%b %Y}"
     fig, rect = _canvas(title, subtitle, "allocation_daily.parquet")
     ax = _axis(fig, rect)
@@ -131,7 +131,7 @@ def _weights_and_regimes(weights, regime, exposure_summary):
     # The probability known at each decision date is extended forward to the next decision.
     valid.loc[active.index.max()] = valid.iloc[-1]
     fig, rect = _canvas(
-        "V2 flagship allocation and the macro backdrop",
+        "Flagship Dynamic Allocation & Macro Regime Backdrop",
         f"Mean top-level weights: equity {top['equity']:.1%}, bonds {top['bond']:.1%}, cash {top['cash']:.1%}  |  End-of-day weights",
         "allocation_weights_end.parquet, flagship_exposure_summary.csv, macro_regimes_monthly.csv",
         size=(11, 6.8),
@@ -191,7 +191,7 @@ def _bond(bond):
     }
     active = bond.loc[bond["strategy"].eq("Bond_Active_Sleeve")].set_index("date").sort_index()
     fig, rect = _canvas(
-        "V2 bond sleeve relative to the passive duration anchor",
+        "Active Bond Sleeve vs. Passive Duration Anchor",
         "Net wealth, end-of-day duration and credit sleeve weights  |  Shading marks the active tail-risk gate",
         "bond_daily.parquet",
         size=(11, 8.3),
@@ -245,7 +245,7 @@ def _diverging(ax, data, tick_labels_x, tick_labels_y, fmt):
 def _equity_factors(factors, ensemble, industry):
     data = factors.set_index("factor").sort_values("mean_rank_ic", ascending=False)
     fig, rect = _canvas(
-        "V2 equity factor evidence and causal ensemble",
+        "A-Share Multi-Factor Diagnostics & Causal Ensemble",
         f"Industry-and-size neutralized factors  |  Largest constrained rebalance target deviation: {industry['abs_deviation'].max():.2%}",
         "equity_factor_ic_summary.csv, equity_ensemble_weights.csv, equity_industry_deviations.csv",
         size=(11, 10),
@@ -303,7 +303,7 @@ def _brinson(attribution):
     x = np.arange(len(components) + 1)
     labels = [aliases.get(name, name.replace("_", " ").title()) for name in components.index]
     fig, rect = _canvas(
-        "V2 flagship attribution versus Static 20/80",
+        "Flagship Brinson Attribution vs. Static 20/80",
         "Linked Brinson effects and incremental trading-cost drag, annualized in basis points",
         "brinson_attribution.csv",
         rect=(0.09, 0.19, 0.97, 0.79),
@@ -346,7 +346,7 @@ def _stress_windows(stress):
     events = [names.get(name.lower(), name.replace("_", " ")) for name in order]
     short = ["Macro BL", "20/80", "60/40", "ERC", "HRP", "ERP"]
     fig, rect = _canvas(
-        "V2 allocation models in historical stress windows",
+        "Multi-Asset Performance Across Historical Stress Windows",
         "Observed cumulative return and maximum drawdown from net daily returns",
         "stress_tests.csv",
         size=(12.8, 5.9),
@@ -365,7 +365,7 @@ def _stress_windows(stress):
 
 def _parameter_grid(grid):
     fig, rect = _canvas(
-        "V2 Black–Litterman parameter sensitivity",
+        "Black–Litterman Parameter Sensitivity (δ × τ)",
         "Realized outcomes by risk aversion (δ) and prior covariance scale (τ)  |  Fixed core assets and relative views",
         "bl_grid_sensitivity.csv",
         size=(11.5, 5.2),
@@ -411,7 +411,7 @@ def _ablation(performance, steps):
     data = data.rename(index=stages)
     fig, rect = _canvas(
         "What changed as each allocation layer was added?",
-        "Sequential ablation of the V2 fixed-income-plus architecture",
+        "Sequential Ablation of the Fixed-Income-Plus Architecture",
         "ablation_steps.csv, performance_summary.csv",
         size=(11.5, 5.2),
         rect=(0.31, 0.14, 0.96, 0.77),

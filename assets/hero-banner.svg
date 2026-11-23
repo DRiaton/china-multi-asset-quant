@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="China Multi-Asset Quant Banner">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1120"/>
+      <stop offset="52%" stop-color="#0F1D36"/>
+      <stop offset="100%" stop-color="#0B162B"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="82%" cy="22%" r="48%">
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#0EA5E9" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="18%" cy="85%" r="40%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="55%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.0"/>
+    </linearGradient>
+    <clipPath id="clipCard">
+      <rect x="0" y="0" width="1200" height="330" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clipCard)">
+    <!-- Background -->
+    <rect x="0" y="0" width="1200" height="330" fill="url(#bg)"/>
+    <rect x="0" y="0" width="1200" height="330" fill="url(#glow1)"/>
+    <rect x="0" y="0" width="1200" height="330" fill="url(#glow2)"/>
+
+    <!-- Subtle Institutional Chart Grid (Right Half) -->
+    <g stroke="#334155" stroke-opacity="0.22" stroke-width="1">
+      <line x1="680" y1="54" x2="1152" y2="54"/>
+      <line x1="680" y1="96" x2="1152" y2="96"/>
+      <line x1="680" y1="138" x2="1152" y2="138"/>
+      <line x1="680" y1="180" x2="1152" y2="180"/>
+      <line x1="760" y1="42" x2="760" y2="196"/>
+      <line x1="860" y1="42" x2="860" y2="196"/>
+      <line x1="960" y1="42" x2="960" y2="196"/>
+      <line x1="1060" y1="42" x2="1060" y2="196"/>
+    </g>
+
+    <!-- Stylized Benchmark Dashed Line -->
+    <path d="M 684 178 C 728 174, 762 164, 804 156 C 846 148, 886 154, 932 142 C 978 130, 1022 126, 1072 114 C 1106 106, 1130 104, 1150 98"
+          fill="none" stroke="#94A3B8" stroke-opacity="0.45" stroke-width="1.8" stroke-dasharray="5 5"/>
+
+    <!-- Stylized Multi-Asset Strategy Area & Curve -->
+    <path d="M 684 178 C 724 170, 756 154, 798 142 C 842 130, 882 132, 926 114 C 972 96, 1018 86, 1068 68 C 1104 56, 1130 52, 1150 44 L 1150 196 L 684 196 Z"
+          fill="url(#areaGrad)"/>
+    <path d="M 684 178 C 724 170, 756 154, 798 142 C 842 130, 882 132, 926 114 C 972 96, 1018 86, 1068 68 C 1104 56, 1130 52, 1150 44"
+          fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Highlight Nodes -->
+    <circle cx="926" cy="114" r="4" fill="#06B6D4" stroke="#0A1120" stroke-width="2"/>
+    <circle cx="1068" cy="68" r="4" fill="#38BDF8" stroke="#0A1120" stroke-width="2"/>
+    <circle cx="1150" cy="44" r="5" fill="#38BDF8" stroke="#E0F2FE" stroke-width="2"/>
+
+    <!-- Eyebrow Pill -->
+    <rect x="48" y="38" width="388" height="28" rx="14" fill="#0EA5E9" fill-opacity="0.12" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1"/>
+    <circle cx="66" cy="52" r="4" fill="#10B981"/>
+    <text x="80" y="56.5" fill="#7DD3FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="600" letter-spacing="1.1">
+      QUANTITATIVE MULTI-ASSET RESEARCH · 2018 – 2026
+    </text>
+
+    <!-- Main Title & Chinese Subtitle -->
+    <text x="48" y="118" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="700" letter-spacing="-0.6">
+      China Multi-Asset Quant
+    </text>
+    <text x="48" y="156" fill="#CBD5E1" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="19.5" font-weight="500">
+      中国宏观「固收+」股债多资产全链路量化投研平台
+    </text>
+    <text x="48" y="185" fill="#64748B" font-family="'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif" font-size="13.5">
+      A股点时多因子选股  ·  中债收益率曲线与久期/信用轮动  ·  Black-Litterman 动态配置  ·  Brinson 归因
+    </text>
+
+    <!-- Bottom 4 KPI Metric Cards -->
+    <!-- Card 1 -->
+    <rect x="48" y="218" width="262" height="82" rx="12" fill="#111C33" fill-opacity="0.88" stroke="#1E3A5F" stroke-width="1"/>
+    <text x="66" y="242" fill="#94A3B8" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="500">固收+ 旗舰主策略 (Macro BL)</text>
+    <text x="66" y="272" fill="#38BDF8" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="23" font-weight="700">4.20% <tspan font-size="13" fill="#94A3B8" font-weight="500">CAGR</tspan></text>
+    <text x="66" y="290" fill="#64748B" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11">Sharpe 0.76  ·  MaxDD −3.93%  ·  +40.8 bps/yr</text>
+
+    <!-- Card 2 -->
+    <rect x="328" y="218" width="262" height="82" rx="12" fill="#111C33" fill-opacity="0.88" stroke="#1E3A5F" stroke-width="1"/>
+    <text x="346" y="242" fill="#94A3B8" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="500">全天候扩展 (含转债与黄金)</text>
+    <text x="346" y="272" fill="#10B981" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="23" font-weight="700">5.14% <tspan font-size="13" fill="#94A3B8" font-weight="500">CAGR</tspan></text>
+    <text x="346" y="290" fill="#64748B" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11">Sharpe 1.03  ·  Calmar 1.31  ·  MaxDD −3.91%</text>
+
+    <!-- Card 3 -->
+    <rect x="608" y="218" width="262" height="82" rx="12" fill="#111C33" fill-opacity="0.88" stroke="#1E3A5F" stroke-width="1"/>
+    <text x="626" y="242" fill="#94A3B8" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="500">股票指增与主动债底</text>
+    <text x="626" y="272" fill="#F8FAFC" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="23" font-weight="700">6.52% <tspan font-size="13" fill="#94A3B8" font-weight="500">IR 0.65</tspan></text>
+    <text x="626" y="290" fill="#64748B" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">636 点时成分股  ·  主动债夏普 1.01</text>
+
+    <!-- Card 4 -->
+    <rect x="888" y="218" width="264" height="82" rx="12" fill="#111C33" fill-opacity="0.88" stroke="#1E3A5F" stroke-width="1"/>
+    <text x="906" y="242" fill="#94A3B8" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="500">工程审计与零泄露校验</text>
+    <text x="906" y="272" fill="#A78BFA" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="23" font-weight="700">39 / 39 <tspan font-size="13" fill="#94A3B8" font-weight="500">Passed</tspan></text>
+    <text x="906" y="290" fill="#64748B" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">截断重跑 0.0 误差  ·  Brinson 残差 &lt; 0.01 bps</text>
+  </g>
+
+  <!-- Outer Crisp Border -->
+  <rect x="0.5" y="0.5" width="1199" height="329" rx="18" fill="none" stroke="#1E3A5F" stroke-opacity="0.8" stroke-width="1"/>
+</svg>
