@@ -1,0 +1,43 @@
+{
+  "version": "V2",
+  "first_session": "2018-01-02",
+  "last_session": "2026-11-20",
+  "sessions": 2155,
+  "config_sha256": "63a5b5b5fd08fab090460be05700852b5c40c6dde52e6c85d408e6d726ec31bb",
+  "annualization_sessions": 252,
+  "allocation_trials_for_dsr": 20,
+  "bond_curve_pca_fit_share_first_3": 0.9884091101060223,
+  "bond_curve_pca_oos_projected_share_first_3": 0.9822304815332468,
+  "dns_median_rmse_bps_oos": 7.887113656667241,
+  "brinson_annualized_residual_bps": 3.7903707950093235e-11,
+  "core_strategies": [
+    "Static_20_80",
+    "Static_60_40",
+    "Risk_Parity_ERC",
+    "HRP",
+    "ERP_Tactical_20_80",
+    "Macro_BL_FixedIncomePlus"
+  ],
+  "industry_static_proxy_enabled": true,
+  "industry_pit_coverage": 0.0,
+  "industry_proxy_coverage": 0.9804492903468371,
+  "industry_max_target_deviation": 0.04000000668110798,
+  "industry_max_executed_deviation": 0.04000057344672342,
+  "flagship_mean_exposure": {
+    "lookthrough": {
+      "equity": 0.19344092044551883,
+      "bond": 0.6446009274233799,
+      "cash": 0.16195815213110124
+    },
+    "top_level": {
+      "equity": 0.19344093117360234,
+      "bond": 0.8045833684498126,
+      "cash": 0.001975700376585133
+    }
+  },
+  "ensemble_mean_oos_weights": {
+    "weight_E1_ICIR": 0.4506013253220446,
+    "weight_E2_Ridge": 0.301356051691253,
+    "weight_E3_LightGBM": 0.24804262298670243
+  }
+}

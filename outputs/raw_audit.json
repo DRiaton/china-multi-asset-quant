@@ -1,0 +1,3082 @@
+{
+  "manifest_generated_at": "2026-11-23T12:10:56",
+  "manifest_files_match": true,
+  "tables": {
+    "chinabond_yields": {
+      "rows": 8910,
+      "arrow_schema": {
+        "curve_name": "large_string",
+        "date": "timestamp[ms]",
+        "y_3m": "double",
+        "y_6m": "double",
+        "y_1y": "double",
+        "y_3y": "double",
+        "y_5y": "double",
+        "y_7y": "double",
+        "y_10y": "double",
+        "y_30y": "double",
+        "curve_id": "large_string"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "curve_id",
+        "date"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "curve_name": 0,
+        "date": 0,
+        "y_3m": 0,
+        "y_6m": 0,
+        "y_1y": 0,
+        "y_3y": 0,
+        "y_5y": 0,
+        "y_7y": 0,
+        "y_10y": 0,
+        "y_30y": 2970,
+        "curve_id": 0
+      },
+      "blank": {
+        "curve_name": 0,
+        "curve_id": 0
+      },
+      "numeric": {
+        "y_3m": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 0.7819,
+          "p01": 1.100009,
+          "p99": 4.7941769999999995,
+          "max": 5.304
+        },
+        "y_6m": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 0.9296,
+          "p01": 1.124636,
+          "p99": 4.800446,
+          "max": 5.23
+        },
+        "y_1y": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 0.9307,
+          "p01": 1.1705450000000002,
+          "p99": 4.940364000000001,
+          "max": 5.2468
+        },
+        "y_3y": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.085,
+          "p01": 1.276254,
+          "p99": 5.20291,
+          "max": 5.3328
+        },
+        "y_5y": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.3053,
+          "p01": 1.4157359999999999,
+          "p99": 5.305267,
+          "max": 5.4689
+        },
+        "y_7y": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.3996,
+          "p01": 1.545454,
+          "p99": 5.337600999999999,
+          "max": 5.5486
+        },
+        "y_10y": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.5755,
+          "p01": 1.657026,
+          "p99": 5.374482,
+          "max": 5.5751
+        },
+        "y_30y": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.799,
+          "p01": 1.87,
+          "p99": 5.4325,
+          "max": 5.6002
+        }
+      },
+      "dates": {
+        "date": {
+          "min": "2015-01-04 00:00:00",
+          "max": "2026-11-20 00:00:00",
+          "unique": 2970,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2015-01-04",
+            "2026-11-20"
+          ],
+          "monotonically_increasing": false
+        }
+      },
+      "manifest_dates_match": true,
+      "calendar_days_missing": 0,
+      "calendar_days_missing_oos": 0,
+      "off_calendar_dates": 83,
+      "calendar_dates_after_last_observation": []
+    },
+    "equity_daily_hfq": {
+      "rows": 1516696,
+      "arrow_schema": {
+        "date": "timestamp[ms]",
+        "code": "large_string",
+        "open": "float",
+        "high": "float",
+        "low": "float",
+        "close": "float",
+        "volume": "float",
+        "amount": "float",
+        "outstanding_share": "float",
+        "turnover": "float"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "code",
+        "date"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "date": 0,
+        "code": 0,
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "volume": 0,
+        "amount": 0,
+        "outstanding_share": 34185,
+        "turnover": 34185
+      },
+      "blank": {
+        "code": 0
+      },
+      "numeric": {
+        "open": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.2100000381469727,
+          "p01": 3.5399999618530273,
+          "p99": 3145.500500488282,
+          "max": 66049.203125
+        },
+        "high": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.2899999618530273,
+          "p01": 3.5899999141693115,
+          "p99": 3200.345068359389,
+          "max": 70312.0234375
+        },
+        "low": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.1299999952316284,
+          "p01": 3.5,
+          "p99": 3093.7630126953154,
+          "max": 63917.7890625
+        },
+        "close": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.1299999952316284,
+          "p01": 3.549999952316284,
+          "p99": 3147.4444458007856,
+          "max": 67078.15625
+        },
+        "volume": {
+          "nonfinite_excluding_null": 0,
+          "zero": 4,
+          "negative": 0,
+          "min": 0.0,
+          "p01": 959337.6000000001,
+          "p99": 358332025.60000086,
+          "max": 6011059200.0
+        },
+        "amount": {
+          "nonfinite_excluding_null": 0,
+          "zero": 4,
+          "negative": 0,
+          "min": 0.0,
+          "p01": 18320716.8,
+          "p99": 5975158374.400003,
+          "max": 90037649408.0
+        },
+        "outstanding_share": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 10690000.0,
+          "p01": 51417972.0,
+          "p99": 49106485248.0,
+          "max": 319244206080.0
+        },
+        "turnover": {
+          "nonfinite_excluding_null": 0,
+          "zero": 4,
+          "negative": 0,
+          "min": 0.0,
+          "p01": 0.0006994448485784233,
+          "p99": 0.11196196004748292,
+          "max": 0.8316189646720886
+        }
+      },
+      "dates": {
+        "date": {
+          "min": "2016-01-04 00:00:00",
+          "max": "2026-11-20 00:00:00",
+          "unique": 2644,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2016-01-04",
+            "2026-11-20"
+          ],
+          "monotonically_increasing": true
+        }
+      },
+      "unique_codes": 636,
+      "manifest_codes_match": true,
+      "manifest_dates_match": true,
+      "ohlc_inconsistency": {
+        "high_below_other": 0,
+        "low_above_other": 0
+      },
+      "calendar_days_missing": 0,
+      "calendar_days_missing_oos": 0,
+      "off_calendar_dates": 1,
+      "calendar_dates_after_last_observation": []
+    },
+    "equity_valuation_baidu": {
+      "rows": 487953,
+      "arrow_schema": {
+        "date": "timestamp[ms]",
+        "code": "large_string",
+        "pe_ttm": "float",
+        "pb": "float",
+        "pcf": "float",
+        "total_mv_100m": "float"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "code",
+        "date"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "date": 0,
+        "code": 0,
+        "pe_ttm": 0,
+        "pb": 0,
+        "pcf": 0,
+        "total_mv_100m": 0
+      },
+      "blank": {
+        "code": 0
+      },
+      "numeric": {
+        "pe_ttm": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 54099,
+          "min": -9927.8095703125,
+          "p01": -249.97399841308592,
+          "p99": 535.1835986328113,
+          "max": 9986.669921875
+        },
+        "pb": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 3450,
+          "min": -486.5899963378906,
+          "p01": 0.33000001311302185,
+          "p99": 28.170000076293945,
+          "max": 614.489990234375
+        },
+        "pcf": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 78303,
+          "min": -7877.81982421875,
+          "p01": -457.9647961425781,
+          "p99": 543.9788110351551,
+          "max": 9977.3095703125
+        },
+        "total_mv_100m": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 2.319999933242798,
+          "p01": 45.790000915527344,
+          "p99": 12885.716796874987,
+          "max": 33502.19140625
+        }
+      },
+      "dates": {
+        "date": {
+          "min": "2016-11-23 00:00:00",
+          "max": "2026-11-22 00:00:00",
+          "unique": 3652,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2016-11-23",
+            "2026-11-22"
+          ],
+          "monotonically_increasing": true
+        }
+      },
+      "unique_codes": 636,
+      "manifest_codes_match": true,
+      "manifest_dates_match": true,
+      "calendar_days_missing": 0,
+      "calendar_days_missing_oos": 0,
+      "off_calendar_dates": 1225,
+      "calendar_dates_after_last_observation": []
+    },
+    "etf_daily": {
+      "rows": 30578,
+      "arrow_schema": {
+        "date": "timestamp[ms]",
+        "code": "large_string",
+        "symbol": "large_string",
+        "alias": "large_string",
+        "asset_class": "large_string",
+        "open": "double",
+        "high": "double",
+        "low": "double",
+        "close": "double",
+        "volume": "int64",
+        "amount": "int64"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "code",
+        "date"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "date": 0,
+        "code": 0,
+        "symbol": 0,
+        "alias": 0,
+        "asset_class": 0,
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "volume": 0,
+        "amount": 0
+      },
+      "blank": {
+        "code": 0,
+        "symbol": 0,
+        "alias": 0,
+        "asset_class": 0
+      },
+      "numeric": {
+        "open": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 0.9,
+          "p01": 1.13177,
+          "p99": 140.74846,
+          "max": 141.807
+        },
+        "high": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 0.916,
+          "p01": 1.14,
+          "p99": 140.8,
+          "max": 142.03
+        },
+        "low": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 0.838,
+          "p01": 1.1217700000000002,
+          "p99": 140.69061,
+          "max": 141.736
+        },
+        "close": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 0.904,
+          "p01": 1.13277,
+          "p99": 140.74546,
+          "max": 141.789
+        },
+        "volume": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 20.0,
+          "p01": 6600.0,
+          "p99": 1388289302.86,
+          "max": 8629822438.0
+        },
+        "amount": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1942.0,
+          "p01": 640939.63,
+          "p99": 24310926348.28,
+          "max": 137198033807.0
+        }
+      },
+      "dates": {
+        "date": {
+          "min": "2007-01-18 00:00:00",
+          "max": "2026-11-20 00:00:00",
+          "unique": 4821,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2012-05-28",
+            "2012-05-25"
+          ],
+          "monotonically_increasing": false
+        }
+      },
+      "unique_codes": 11,
+      "manifest_codes_match": true,
+      "manifest_dates_match": true,
+      "ohlc_inconsistency": {
+        "high_below_other": 0,
+        "low_above_other": 0
+      }
+    },
+    "etf_nav_daily": {
+      "rows": 26477,
+      "arrow_schema": {
+        "date": "timestamp[ms]",
+        "code": "large_string",
+        "alias": "large_string",
+        "asset_class": "large_string",
+        "unit_nav": "double",
+        "acc_nav": "double",
+        "daily_ret_pct": "double"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "code",
+        "date"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "date": 0,
+        "code": 0,
+        "alias": 0,
+        "asset_class": 0,
+        "unit_nav": 0,
+        "acc_nav": 0,
+        "daily_ret_pct": 55
+      },
+      "blank": {
+        "code": 0,
+        "alias": 0,
+        "asset_class": 0
+      },
+      "numeric": {
+        "unit_nav": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 0.9949,
+          "p01": 2.357,
+          "p99": 140.84323999999998,
+          "max": 141.78
+        },
+        "acc_nav": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 0.821,
+          "p01": 0.963,
+          "p99": 133.10513999999998,
+          "max": 134.2577
+        },
+        "daily_ret_pct": {
+          "nonfinite_excluding_null": 0,
+          "zero": 2115,
+          "negative": 9312,
+          "min": -11.51,
+          "p01": -2.8,
+          "p99": 2.67,
+          "max": 10.39
+        }
+      },
+      "dates": {
+        "date": {
+          "min": "2015-01-05 00:00:00",
+          "max": "2026-11-20 00:00:00",
+          "unique": 2895,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2015-01-05",
+            "2026-11-20"
+          ],
+          "monotonically_increasing": false
+        }
+      },
+      "unique_codes": 11,
+      "manifest_codes_match": true,
+      "manifest_dates_match": true
+    },
+    "hs300_constituents_pit": {
+      "rows": 13200,
+      "arrow_schema": {
+        "query_date": "timestamp[us]",
+        "update_date": "timestamp[us]",
+        "code": "large_string",
+        "code_name": "large_string"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "update_date",
+        "code"
+      ],
+      "duplicate_key_extra_rows": 1200,
+      "missing": {
+        "query_date": 0,
+        "update_date": 0,
+        "code": 0,
+        "code_name": 0
+      },
+      "blank": {
+        "code": 0,
+        "code_name": 0
+      },
+      "numeric": {},
+      "dates": {
+        "query_date": {
+          "min": "2016-01-15 00:00:00",
+          "max": "2026-11-20 00:00:00",
+          "unique": 44,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2016-01-15",
+            "2026-11-20"
+          ],
+          "monotonically_increasing": true
+        },
+        "update_date": {
+          "min": "2016-01-11 00:00:00",
+          "max": "2026-11-16 00:00:00",
+          "unique": 40,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2016-01-11",
+            "2026-11-16"
+          ],
+          "monotonically_increasing": true
+        }
+      },
+      "unique_codes": 636,
+      "manifest_codes_match": true
+    },
+    "hs300_valuation": {
+      "rows": 260,
+      "arrow_schema": {
+        "date": "timestamp[ms]",
+        "hs300_close": "double",
+        "pe_static_ew": "double",
+        "pe_static": "double",
+        "pe_static_median": "double",
+        "pe_ttm_ew": "double",
+        "pe_ttm": "double",
+        "pe_ttm_median": "double",
+        "pb": "double",
+        "pb_ew": "double",
+        "pb_median": "double"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "date"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "date": 0,
+        "hs300_close": 0,
+        "pe_static_ew": 0,
+        "pe_static": 0,
+        "pe_static_median": 0,
+        "pe_ttm_ew": 0,
+        "pe_ttm": 0,
+        "pe_ttm_median": 0,
+        "pb": 0,
+        "pb_ew": 0,
+        "pb_median": 0
+      },
+      "blank": {},
+      "numeric": {
+        "hs300_close": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 855.95,
+          "p01": 877.7019,
+          "p99": 5343.888800000001,
+          "max": 5688.54
+        },
+        "pe_static_ew": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 18.54,
+          "p01": 22.5226,
+          "p99": 80.09990000000006,
+          "max": 84.86
+        },
+        "pe_static": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 8.19,
+          "p01": 8.3308,
+          "p99": 54.617400000000025,
+          "max": 65.32
+        },
+        "pe_static_median": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 14.83,
+          "p01": 16.5255,
+          "p99": 67.9756,
+          "max": 72.22
+        },
+        "pe_ttm_ew": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 17.83,
+          "p01": 22.0596,
+          "p99": 64.67130000000004,
+          "max": 70.37
+        },
+        "pe_ttm": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 7.96,
+          "p01": 8.1336,
+          "p99": 43.432400000000015,
+          "max": 47.84
+        },
+        "pe_ttm_median": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 12.94,
+          "p01": 15.4654,
+          "p99": 53.232800000000054,
+          "max": 58.64
+        },
+        "pb": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.16,
+          "p01": 1.1859,
+          "p99": 6.529400000000009,
+          "max": 7.09
+        },
+        "pb_ew": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.69,
+          "p01": 1.7659,
+          "p99": 7.941500000000003,
+          "max": 8.99
+        },
+        "pb_median": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.49,
+          "p01": 1.5436,
+          "p99": 6.478400000000006,
+          "max": 7.25
+        }
+      },
+      "dates": {
+        "date": {
+          "min": "2005-04-29 00:00:00",
+          "max": "2026-11-20 00:00:00",
+          "unique": 260,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2005-04-29",
+            "2026-11-20"
+          ],
+          "monotonically_increasing": true
+        }
+      },
+      "manifest_dates_match": true
+    },
+    "indices_daily": {
+      "rows": 29400,
+      "arrow_schema": {
+        "date": "timestamp[ms]",
+        "code": "large_string",
+        "alias": "large_string",
+        "open": "double",
+        "high": "double",
+        "low": "double",
+        "close": "double",
+        "volume": "int64"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "code",
+        "date"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "date": 0,
+        "code": 0,
+        "alias": 0,
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "volume": 0
+      },
+      "blank": {
+        "code": 0,
+        "alias": 0
+      },
+      "numeric": {
+        "open": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 592.403,
+          "p01": 777.0108299999999,
+          "p99": 7530.283829999998,
+          "max": 11589.95
+        },
+        "high": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 601.495,
+          "p01": 784.75561,
+          "p99": 7630.1647099999955,
+          "max": 11616.38
+        },
+        "low": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 585.444,
+          "p01": 765.03506,
+          "p99": 7437.403089999987,
+          "max": 11400.65
+        },
+        "close": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 593.66,
+          "p01": 778.20484,
+          "p99": 7532.723369999996,
+          "max": 11545.89
+        },
+        "volume": {
+          "nonfinite_excluding_null": 0,
+          "zero": 721,
+          "negative": 0,
+          "min": 0.0,
+          "p01": 0.0,
+          "p99": 49563122995.99999,
+          "max": 108341431400.0
+        }
+      },
+      "dates": {
+        "date": {
+          "min": "2002-01-04 00:00:00",
+          "max": "2026-11-20 00:00:00",
+          "unique": 6035,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2005-01-04",
+            "2004-12-31"
+          ],
+          "monotonically_increasing": false
+        }
+      },
+      "unique_codes": 6,
+      "manifest_codes_match": true,
+      "manifest_dates_match": true,
+      "ohlc_inconsistency": {
+        "high_below_other": 0,
+        "low_above_other": 0
+      }
+    },
+    "macro_cpi_monthly": {
+      "rows": 226,
+      "arrow_schema": {
+        "月份": "large_string",
+        "全国-当月": "double",
+        "全国-同比增长": "double",
+        "全国-环比增长": "double",
+        "全国-累计": "double",
+        "城市-当月": "double",
+        "城市-同比增长": "double",
+        "城市-环比增长": "double",
+        "城市-累计": "double",
+        "农村-当月": "double",
+        "农村-同比增长": "double",
+        "农村-环比增长": "double",
+        "农村-累计": "double"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "月份"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "月份": 0,
+        "全国-当月": 0,
+        "全国-同比增长": 0,
+        "全国-环比增长": 0,
+        "全国-累计": 0,
+        "城市-当月": 0,
+        "城市-同比增长": 0,
+        "城市-环比增长": 0,
+        "城市-累计": 0,
+        "农村-当月": 0,
+        "农村-同比增长": 0,
+        "农村-环比增长": 0,
+        "农村-累计": 0
+      },
+      "blank": {
+        "月份": 0
+      },
+      "numeric": {
+        "全国-当月": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 98.1943,
+          "p01": 98.45635,
+          "p99": 108.16135,
+          "max": 108.7443
+        },
+        "全国-同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 3,
+          "negative": 23,
+          "min": -1.8057,
+          "p01": -1.54365,
+          "p99": 8.161349999999999,
+          "max": 8.7443
+        },
+        "全国-环比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 14,
+          "negative": 84,
+          "min": -1.2,
+          "p01": -0.9783,
+          "p99": 1.473125,
+          "max": 2.6
+        },
+        "全国-累计": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 98.8285,
+          "p01": 98.88575,
+          "p99": 108.012525,
+          "max": 108.1544
+        },
+        "城市-当月": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 98.1006,
+          "p01": 98.232975,
+          "p99": 107.8107,
+          "max": 108.4973
+        },
+        "城市-同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 5,
+          "negative": 21,
+          "min": -1.8994,
+          "p01": -1.7670249999999998,
+          "p99": 7.8107,
+          "max": 8.4973
+        },
+        "城市-环比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 16,
+          "negative": 86,
+          "min": -1.2,
+          "p01": -0.9712000000000001,
+          "p99": 1.466375,
+          "max": 2.7
+        },
+        "城市-累计": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 98.6445,
+          "p01": 98.712275,
+          "p99": 107.714925,
+          "max": 107.8412
+        },
+        "农村-当月": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 98.4173,
+          "p01": 98.985975,
+          "p99": 108.911775,
+          "max": 109.2737
+        },
+        "农村-同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 1,
+          "negative": 29,
+          "min": -1.5827,
+          "p01": -1.014025,
+          "p99": 8.911774999999999,
+          "max": 9.2737
+        },
+        "农村-环比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 19,
+          "negative": 86,
+          "min": -1.3,
+          "p01": -0.998825,
+          "p99": 1.4933,
+          "max": 2.4
+        },
+        "农村-累计": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 99.2,
+          "p01": 99.271825,
+          "p99": 108.646375,
+          "max": 108.8147
+        }
+      },
+      "dates": {
+        "月份": {
+          "min": "2008-01",
+          "max": "2026-10",
+          "unique": 226,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2026年10月份",
+            "2008年01月份"
+          ],
+          "monotonically_increasing": false,
+          "missing_periods": []
+        }
+      }
+    },
+    "macro_gdp": {
+      "rows": 83,
+      "arrow_schema": {
+        "季度": "large_string",
+        "国内生产总值-绝对值": "double",
+        "国内生产总值-同比增长": "double",
+        "第一产业-绝对值": "double",
+        "第一产业-同比增长": "double",
+        "第二产业-绝对值": "double",
+        "第二产业-同比增长": "double",
+        "第三产业-绝对值": "double",
+        "第三产业-同比增长": "double"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "季度"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "季度": 0,
+        "国内生产总值-绝对值": 0,
+        "国内生产总值-同比增长": 0,
+        "第一产业-绝对值": 0,
+        "第一产业-同比增长": 0,
+        "第二产业-绝对值": 0,
+        "第二产业-同比增长": 0,
+        "第三产业-绝对值": 0,
+        "第三产业-同比增长": 0
+      },
+      "blank": {
+        "季度": 0
+      },
+      "numeric": {
+        "国内生产总值-绝对值": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 47831.7,
+          "p01": 56235.797999999995,
+          "p99": 1357752.5399999996,
+          "max": 1401879.2
+        },
+        "国内生产总值-同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 2,
+          "min": -6.8,
+          "p01": -2.5359999999999996,
+          "p99": 15.127999999999966,
+          "max": 18.9
+        },
+        "第一产业-绝对值": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 3012.7,
+          "p01": 3390.146,
+          "p99": 91943.77999999998,
+          "max": 93346.8
+        },
+        "第一产业-同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 1,
+          "min": -3.1,
+          "p01": 0.26200000000000034,
+          "p99": 7.853999999999997,
+          "max": 8.1
+        },
+        "第二产业-绝对值": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 21418.2,
+          "p01": 25161.417999999998,
+          "p99": 491987.96799999994,
+          "max": 499653.0
+        },
+        "第二产业-同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 2,
+          "min": -10.1,
+          "p01": -3.7039999999999993,
+          "p99": 17.27399999999993,
+          "max": 24.9
+        },
+        "第三产业-绝对值": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 23400.7,
+          "p01": 27684.216,
+          "p99": 773820.6919999997,
+          "max": 808879.3
+        },
+        "第三产业-同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 2,
+          "min": -4.9,
+          "p01": -1.948,
+          "p99": 15.907999999999996,
+          "max": 16.4
+        }
+      },
+      "dates": {
+        "季度": {
+          "min": "2006Q1",
+          "max": "2026Q3",
+          "unique": 83,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2026年第1-3季度",
+            "2006年第1季度"
+          ],
+          "monotonically_increasing": false,
+          "missing_periods": []
+        }
+      }
+    },
+    "macro_money_supply": {
+      "rows": 226,
+      "arrow_schema": {
+        "月份": "large_string",
+        "货币和准货币(M2)-数量(亿元)": "double",
+        "货币和准货币(M2)-同比增长": "double",
+        "货币和准货币(M2)-环比增长": "double",
+        "货币(M1)-数量(亿元)": "double",
+        "货币(M1)-同比增长": "double",
+        "货币(M1)-环比增长": "double",
+        "流通中的现金(M0)-数量(亿元)": "double",
+        "流通中的现金(M0)-同比增长": "double",
+        "流通中的现金(M0)-环比增长": "double"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "月份"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "月份": 0,
+        "货币和准货币(M2)-数量(亿元)": 0,
+        "货币和准货币(M2)-同比增长": 0,
+        "货币和准货币(M2)-环比增长": 0,
+        "货币(M1)-数量(亿元)": 0,
+        "货币(M1)-同比增长": 0,
+        "货币(M1)-环比增长": 0,
+        "流通中的现金(M0)-数量(亿元)": 0,
+        "流通中的现金(M0)-同比增长": 0,
+        "流通中的现金(M0)-环比增长": 0
+      },
+      "blank": {
+        "月份": 0
+      },
+      "numeric": {
+        "货币和准货币(M2)-数量(亿元)": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 417846.17,
+          "p01": 424619.3275,
+          "p99": 3567839.8075,
+          "max": 3596289.7
+        },
+        "货币和准货币(M2)-同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 6.2,
+          "p01": 6.425,
+          "p99": 29.115,
+          "max": 29.74
+        },
+        "货币和准货币(M2)-环比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 37,
+          "min": -1.2680326,
+          "p01": -0.951526605,
+          "p99": 3.759371965,
+          "max": 4.72039883
+        },
+        "货币(M1)-数量(亿元)": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 150177.88,
+          "p01": 152107.37,
+          "p99": 1177000.3825,
+          "max": 1193202.99
+        },
+        "货币(M1)-同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 1,
+          "negative": 10,
+          "min": -7.4,
+          "p01": -6.475,
+          "p99": 34.06,
+          "max": 38.96
+        },
+        "货币(M1)-环比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 67,
+          "min": -6.84404161,
+          "p01": -5.265136645,
+          "p99": 5.9077813475,
+          "max": 64.59221387
+        },
+        "流通中的现金(M0)-数量(亿元)": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 30169.3,
+          "p01": 30496.6,
+          "p99": 149556.3425,
+          "max": 151436.41
+        },
+        "流通中的现金(M0)-同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 6,
+          "min": -17.6,
+          "p01": -4.575,
+          "p99": 22.37,
+          "max": 42.5
+        },
+        "流通中的现金(M0)-环比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 86,
+          "min": -18.58933305,
+          "p01": -16.6332788325,
+          "p99": 25.312397725,
+          "max": 30.58357063
+        }
+      },
+      "dates": {
+        "月份": {
+          "min": "2008-01",
+          "max": "2026-10",
+          "unique": 226,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2026年10月份",
+            "2008年01月份"
+          ],
+          "monotonically_increasing": false,
+          "missing_periods": []
+        }
+      }
+    },
+    "macro_pmi": {
+      "rows": 226,
+      "arrow_schema": {
+        "月份": "large_string",
+        "制造业-指数": "double",
+        "制造业-同比增长": "double",
+        "非制造业-指数": "double",
+        "非制造业-同比增长": "double"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "月份"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "月份": 0,
+        "制造业-指数": 0,
+        "制造业-同比增长": 0,
+        "非制造业-指数": 0,
+        "非制造业-同比增长": 0
+      },
+      "blank": {
+        "月份": 0
+      },
+      "numeric": {
+        "制造业-指数": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 35.7,
+          "p01": 42.050000000000004,
+          "p99": 56.4,
+          "max": 59.2
+        },
+        "制造业-同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 11,
+          "negative": 120,
+          "min": -29.96389892,
+          "p01": -23.1643190225,
+          "p99": 33.975684619999996,
+          "max": 42.26804124
+        },
+        "非制造业-指数": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 29.6,
+          "p01": 43.1,
+          "p99": 59.275,
+          "max": 60.2
+        },
+        "非制造业-同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 8,
+          "negative": 133,
+          "min": -45.48802947,
+          "p01": -19.700618435,
+          "p99": 20.9273680825,
+          "max": 73.64864865
+        }
+      },
+      "dates": {
+        "月份": {
+          "min": "2008-01",
+          "max": "2026-10",
+          "unique": 226,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2026年10月份",
+            "2008年01月份"
+          ],
+          "monotonically_increasing": false,
+          "missing_periods": []
+        }
+      }
+    },
+    "macro_ppi_monthly": {
+      "rows": 250,
+      "arrow_schema": {
+        "月份": "large_string",
+        "当月": "double",
+        "当月同比增长": "double",
+        "累计": "double"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "月份"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "月份": 0,
+        "当月": 0,
+        "当月同比增长": 0,
+        "累计": 0
+      },
+      "blank": {
+        "月份": 0
+      },
+      "numeric": {
+        "当月": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 91.8,
+          "p01": 92.494,
+          "p99": 110.50399999999999,
+          "max": 113.5
+        },
+        "当月同比增长": {
+          "nonfinite_excluding_null": 0,
+          "zero": 1,
+          "negative": 124,
+          "min": -8.22,
+          "p01": -7.506,
+          "p99": 10.503999999999996,
+          "max": 13.5
+        },
+        "累计": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 93.5,
+          "p01": 93.6631,
+          "p99": 108.602,
+          "max": 109.1
+        }
+      },
+      "dates": {
+        "月份": {
+          "min": "2006-01",
+          "max": "2026-10",
+          "unique": 250,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2026年10月份",
+            "2006年01月份"
+          ],
+          "monotonically_increasing": false,
+          "missing_periods": []
+        }
+      }
+    },
+    "macro_shibor": {
+      "rows": 2405,
+      "arrow_schema": {
+        "日期": "large_string",
+        "O/N-定价": "double",
+        "O/N-涨跌幅": "double",
+        "1W-定价": "double",
+        "1W-涨跌幅": "double",
+        "2W-定价": "double",
+        "2W-涨跌幅": "double",
+        "1M-定价": "double",
+        "1M-涨跌幅": "double",
+        "3M-定价": "double",
+        "3M-涨跌幅": "double",
+        "6M-定价": "double",
+        "6M-涨跌幅": "double",
+        "9M-定价": "double",
+        "9M-涨跌幅": "double",
+        "1Y-定价": "double",
+        "1Y-涨跌幅": "double"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "日期"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "日期": 0,
+        "O/N-定价": 0,
+        "O/N-涨跌幅": 1,
+        "1W-定价": 0,
+        "1W-涨跌幅": 1,
+        "2W-定价": 0,
+        "2W-涨跌幅": 1,
+        "1M-定价": 0,
+        "1M-涨跌幅": 1,
+        "3M-定价": 0,
+        "3M-涨跌幅": 1,
+        "6M-定价": 0,
+        "6M-涨跌幅": 1,
+        "9M-定价": 0,
+        "9M-涨跌幅": 1,
+        "1Y-定价": 0,
+        "1Y-涨跌幅": 1
+      },
+      "blank": {
+        "日期": 0
+      },
+      "numeric": {
+        "O/N-定价": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 0.441,
+          "p01": 0.79308,
+          "p99": 2.841824,
+          "max": 3.282
+        },
+        "O/N-涨跌幅": {
+          "nonfinite_excluding_null": 0,
+          "zero": 47,
+          "negative": 1219,
+          "min": -48.7,
+          "p01": -45.4,
+          "p99": 49.393999999999956,
+          "max": 151.6
+        },
+        "1W-定价": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.299,
+          "p01": 1.331,
+          "p99": 2.9246440000000002,
+          "max": 3.194
+        },
+        "1W-涨跌幅": {
+          "nonfinite_excluding_null": 0,
+          "zero": 26,
+          "negative": 1158,
+          "min": -95.3,
+          "p01": -28.294,
+          "p99": 23.19399999999996,
+          "max": 46.5
+        },
+        "2W-定价": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.253,
+          "p01": 1.325,
+          "p99": 3.87488,
+          "max": 3.989
+        },
+        "2W-涨跌幅": {
+          "nonfinite_excluding_null": 0,
+          "zero": 41,
+          "negative": 1087,
+          "min": -152.7,
+          "p01": -46.043,
+          "p99": 26.98799999999992,
+          "max": 59.5
+        },
+        "1M-定价": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.3,
+          "p01": 1.32468,
+          "p99": 4.572984000000001,
+          "max": 4.9352
+        },
+        "1M-涨跌幅": {
+          "nonfinite_excluding_null": 0,
+          "zero": 237,
+          "negative": 1141,
+          "min": -27.2,
+          "p01": -7.397,
+          "p99": 6.838799999999992,
+          "max": 106.65
+        },
+        "3M-定价": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.391,
+          "p01": 1.4,
+          "p99": 4.7719640000000005,
+          "max": 4.9133
+        },
+        "3M-涨跌幅": {
+          "nonfinite_excluding_null": 0,
+          "zero": 366,
+          "negative": 1068,
+          "min": -11.4,
+          "p01": -5.5,
+          "p99": 3.9942999999999618,
+          "max": 55.22
+        },
+        "6M-定价": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.418,
+          "p01": 1.428,
+          "p99": 4.746600000000001,
+          "max": 4.8885
+        },
+        "6M-涨跌幅": {
+          "nonfinite_excluding_null": 0,
+          "zero": 354,
+          "negative": 1086,
+          "min": -10.0,
+          "p01": -4.694,
+          "p99": 3.3,
+          "max": 12.1
+        },
+        "9M-定价": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.428,
+          "p01": 1.45,
+          "p99": 4.731096,
+          "max": 4.7333
+        },
+        "9M-涨跌幅": {
+          "nonfinite_excluding_null": 0,
+          "zero": 397,
+          "negative": 1078,
+          "min": -26.2,
+          "p01": -4.3,
+          "p99": 3.19699999999998,
+          "max": 11.1
+        },
+        "1Y-定价": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 1.4367,
+          "p01": 1.461828,
+          "p99": 4.7423,
+          "max": 4.7631
+        },
+        "1Y-涨跌幅": {
+          "nonfinite_excluding_null": 0,
+          "zero": 387,
+          "negative": 1104,
+          "min": -37.54,
+          "p01": -3.997,
+          "p99": 3.09699999999998,
+          "max": 12.5
+        }
+      },
+      "dates": {
+        "日期": {
+          "min": "2015-05-08 00:00:00",
+          "max": "2026-11-13 00:00:00",
+          "unique": 2405,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2015-05-08",
+            "2026-11-13"
+          ],
+          "monotonically_increasing": true
+        }
+      },
+      "calendar_days_missing": 453,
+      "calendar_days_missing_oos": 0,
+      "off_calendar_dates": 58,
+      "calendar_dates_after_last_observation": [
+        "2026-11-16",
+        "2026-11-17",
+        "2026-11-18",
+        "2026-11-19",
+        "2026-11-20"
+      ]
+    },
+    "macro_social_financing": {
+      "rows": 136,
+      "arrow_schema": {
+        "月份": "large_string",
+        "社会融资规模增量": "int64",
+        "其中-人民币贷款": "int64",
+        "其中-委托贷款外币贷款": "int64",
+        "其中-委托贷款": "int64",
+        "其中-信托贷款": "int64",
+        "其中-未贴现银行承兑汇票": "int64",
+        "其中-企业债券": "int64",
+        "其中-非金融企业境内股票融资": "double"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "月份"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "月份": 0,
+        "社会融资规模增量": 0,
+        "其中-人民币贷款": 0,
+        "其中-委托贷款外币贷款": 0,
+        "其中-委托贷款": 0,
+        "其中-信托贷款": 0,
+        "其中-未贴现银行承兑汇票": 0,
+        "其中-企业债券": 0,
+        "其中-非金融企业境内股票融资": 0
+      },
+      "blank": {
+        "月份": 0
+      },
+      "numeric": {
+        "社会融资规模增量": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 1,
+          "min": -658.0,
+          "p01": 4992.25,
+          "p99": 68511.80000000003,
+          "max": 72185.0
+        },
+        "其中-人民币贷款": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 4,
+          "min": -4296.0,
+          "p01": -2886.7,
+          "p99": 51186.000000000015,
+          "max": 61759.0
+        },
+        "其中-委托贷款外币贷款": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 93,
+          "min": -2344.0,
+          "p01": -1705.3,
+          "p99": 1074.5500000000004,
+          "max": 1145.0
+        },
+        "其中-委托贷款": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 80,
+          "min": -2210.0,
+          "p01": -1777.2,
+          "p99": 3392.100000000002,
+          "max": 4011.0
+        },
+        "其中-信托贷款": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 68,
+          "min": -4620.0,
+          "p01": -3725.95,
+          "p99": 2891.800000000004,
+          "max": 3175.0
+        },
+        "其中-未贴现银行承兑汇票": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 78,
+          "min": -5284.0,
+          "p01": -5100.15,
+          "p99": 5957.100000000003,
+          "max": 6293.0
+        },
+        "其中-企业债券": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 15,
+          "min": -4887.0,
+          "p01": -2652.45,
+          "p99": 8482.400000000012,
+          "max": 9931.0
+        },
+        "其中-非金融企业境内股票融资": {
+          "nonfinite_excluding_null": 0,
+          "zero": 0,
+          "negative": 0,
+          "min": 76.0,
+          "p01": 112.05,
+          "p99": 1504.0000000000002,
+          "max": 2075.0
+        }
+      },
+      "dates": {
+        "月份": {
+          "min": "2015-01",
+          "max": "2026-04",
+          "unique": 136,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "201501",
+            "202604"
+          ],
+          "monotonically_increasing": true,
+          "missing_periods": []
+        }
+      }
+    },
+    "stock_industry": {
+      "rows": 5563,
+      "arrow_schema": {
+        "updateDate": "large_string",
+        "code": "large_string",
+        "code_name": "large_string",
+        "industry": "large_string",
+        "industryClassification": "large_string"
+      },
+      "manifest_rows_match": true,
+      "manifest_columns_match": true,
+      "key": [
+        "code"
+      ],
+      "duplicate_key_extra_rows": 0,
+      "missing": {
+        "updateDate": 0,
+        "code": 0,
+        "code_name": 0,
+        "industry": 0,
+        "industryClassification": 0
+      },
+      "blank": {
+        "updateDate": 0,
+        "code": 0,
+        "code_name": 0,
+        "industry": 339,
+        "industryClassification": 0
+      },
+      "numeric": {},
+      "dates": {
+        "updateDate": {
+          "min": "2026-11-23 00:00:00",
+          "max": "2026-11-23 00:00:00",
+          "unique": 1,
+          "invalid_or_missing": 0,
+          "raw_examples": [
+            "2026-11-23"
+          ],
+          "monotonically_increasing": true
+        }
+      },
+      "unique_codes": 5563,
+      "manifest_codes_match": true
+    }
+  },
+  "nav_checks": {
+    "510300": {
+      "tape_trade_60": "2012-08-20",
+      "tape_trade_61": "2012-08-21",
+      "oos_tape_dates_missing_nav": 0,
+      "oos_tape_dates_missing_provider_return": 0,
+      "nav_first": "2015-01-05",
+      "tape_first": "2012-05-28",
+      "nav_last": "2026-11-20",
+      "nav_non_calendar_rows": 8,
+      "missing_calendar_rows_from_first_nav": 0,
+      "missing_calendar_examples": [],
+      "tape_dates_without_nav_since_first_nav": 0,
+      "discrepancy_gt_0_1_percentage_point": 796,
+      "discrepancy_gt_1_percentage_point": 2,
+      "max_discrepancy_percentage_points": 1.2634011627906858,
+      "large_nav_move_examples": [],
+      "missing_return_examples": [
+        {
+          "date": "2017-12-31T00:00:00.000",
+          "code": "510300",
+          "alias": "CSI300_ETF",
+          "asset_class": "equity_large",
+          "unit_nav": 4.0774,
+          "acc_nav": 1.5949,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": -0.004904846
+        },
+        {
+          "date": "2018-06-30T00:00:00.000",
+          "code": "510300",
+          "alias": "CSI300_ETF",
+          "asset_class": "equity_large",
+          "unit_nav": 3.541,
+          "acc_nav": 1.4129,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": -0.0070771408,
+          "unit_nav_ret_pct": -0.0028239812
+        },
+        {
+          "date": "2018-12-31T00:00:00.000",
+          "code": "510300",
+          "alias": "CSI300_ETF",
+          "asset_class": "equity_large",
+          "unit_nav": 3.0699,
+          "acc_nav": 1.2382,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": -0.003257329
+        },
+        {
+          "date": "2019-06-30T00:00:00.000",
+          "code": "510300",
+          "alias": "CSI300_ETF",
+          "asset_class": "equity_large",
+          "unit_nav": 3.8541,
+          "acc_nav": 1.551,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": -0.0025945722
+        }
+      ]
+    },
+    "510500": {
+      "tape_trade_60": "2013-06-18",
+      "tape_trade_61": "2013-06-19",
+      "oos_tape_dates_missing_nav": 0,
+      "oos_tape_dates_missing_provider_return": 0,
+      "nav_first": "2015-01-05",
+      "tape_first": "2013-03-15",
+      "nav_last": "2026-11-20",
+      "nav_non_calendar_rows": 8,
+      "missing_calendar_rows_from_first_nav": 0,
+      "missing_calendar_examples": [],
+      "tape_dates_without_nav_since_first_nav": 0,
+      "discrepancy_gt_0_1_percentage_point": 39,
+      "discrepancy_gt_1_percentage_point": 0,
+      "max_discrepancy_percentage_points": 0.2792235269773897,
+      "large_nav_move_examples": [
+        {
+          "date": "2015-04-14T00:00:00.000",
+          "code": "510500",
+          "alias": "CSI500_ETF",
+          "asset_class": "equity_mid",
+          "unit_nav": 8.1198,
+          "acc_nav": 2.2762,
+          "daily_ret_pct": -0.04,
+          "acc_nav_ret_pct": -0.0351339482,
+          "unit_nav_ret_pct": 256.6007905138
+        },
+        {
+          "date": "2022-08-26T00:00:00.000",
+          "code": "510500",
+          "alias": "CSI500_ETF",
+          "asset_class": "equity_mid",
+          "unit_nav": 6.2977,
+          "acc_nav": 2.0221,
+          "daily_ret_pct": -0.35,
+          "acc_nav_ret_pct": -0.3548021485,
+          "unit_nav_ret_pct": -13.0031772344
+        },
+        {
+          "date": "2024-09-30T00:00:00.000",
+          "code": "510500",
+          "alias": "CSI500_ETF",
+          "asset_class": "equity_mid",
+          "unit_nav": 5.8408,
+          "acc_nav": 1.9033,
+          "daily_ret_pct": 10.39,
+          "acc_nav_ret_pct": 10.2212184387,
+          "unit_nav_ret_pct": 10.3870577563
+        }
+      ],
+      "missing_return_examples": [
+        {
+          "date": "2017-12-31T00:00:00.000",
+          "code": "510500",
+          "alias": "CSI500_ETF",
+          "asset_class": "equity_mid",
+          "unit_nav": 6.5882,
+          "acc_nav": 1.8468,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": -0.0054144783,
+          "unit_nav_ret_pct": -0.0030356384
+        },
+        {
+          "date": "2018-06-30T00:00:00.000",
+          "code": "510500",
+          "alias": "CSI500_ETF",
+          "asset_class": "equity_mid",
+          "unit_nav": 5.5273,
+          "acc_nav": 1.5494,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": -0.0064536947,
+          "unit_nav_ret_pct": -0.0018091689
+        },
+        {
+          "date": "2018-12-31T00:00:00.000",
+          "code": "510500",
+          "alias": "CSI500_ETF",
+          "asset_class": "equity_mid",
+          "unit_nav": 4.4624,
+          "acc_nav": 1.2509,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": -0.0079936051,
+          "unit_nav_ret_pct": -0.0044816923
+        },
+        {
+          "date": "2019-06-30T00:00:00.000",
+          "code": "510500",
+          "alias": "CSI500_ETF",
+          "asset_class": "equity_mid",
+          "unit_nav": 5.3283,
+          "acc_nav": 1.4937,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": -0.0037534015
+        }
+      ]
+    },
+    "510880": {
+      "tape_trade_60": "2007-04-18",
+      "tape_trade_61": "2007-04-19",
+      "oos_tape_dates_missing_nav": 0,
+      "oos_tape_dates_missing_provider_return": 0,
+      "nav_first": "2015-01-05",
+      "tape_first": "2007-01-18",
+      "nav_last": "2026-11-20",
+      "nav_non_calendar_rows": 8,
+      "missing_calendar_rows_from_first_nav": 0,
+      "missing_calendar_examples": [],
+      "tape_dates_without_nav_since_first_nav": 0,
+      "discrepancy_gt_0_1_percentage_point": 1596,
+      "discrepancy_gt_1_percentage_point": 13,
+      "max_discrepancy_percentage_points": 1.9916877197551726,
+      "large_nav_move_examples": [],
+      "missing_return_examples": [
+        {
+          "date": "2017-12-31T00:00:00.000",
+          "code": "510880",
+          "alias": "DIVIDEND_ETF",
+          "asset_class": "equity_dividend",
+          "unit_nav": 3.1039,
+          "acc_nav": 2.3249,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": -0.0032216495
+        },
+        {
+          "date": "2018-06-30T00:00:00.000",
+          "code": "510880",
+          "alias": "DIVIDEND_ETF",
+          "asset_class": "equity_dividend",
+          "unit_nav": 2.6921,
+          "acc_nav": 2.1264,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0
+        },
+        {
+          "date": "2018-12-31T00:00:00.000",
+          "code": "510880",
+          "alias": "DIVIDEND_ETF",
+          "asset_class": "equity_dividend",
+          "unit_nav": 2.5847,
+          "acc_nav": 2.0561,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": -0.0038687713
+        },
+        {
+          "date": "2019-06-30T00:00:00.000",
+          "code": "510880",
+          "alias": "DIVIDEND_ETF",
+          "asset_class": "equity_dividend",
+          "unit_nav": 2.7899,
+          "acc_nav": 2.2547,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": -0.0044349831,
+          "unit_nav_ret_pct": -0.0035842294
+        }
+      ]
+    },
+    "511010": {
+      "tape_trade_60": "2013-07-09",
+      "tape_trade_61": "2013-07-10",
+      "oos_tape_dates_missing_nav": 0,
+      "oos_tape_dates_missing_provider_return": 0,
+      "nav_first": "2015-01-05",
+      "tape_first": "2013-04-09",
+      "nav_last": "2026-11-20",
+      "nav_non_calendar_rows": 8,
+      "missing_calendar_rows_from_first_nav": 0,
+      "missing_calendar_examples": [],
+      "tape_dates_without_nav_since_first_nav": 0,
+      "discrepancy_gt_0_1_percentage_point": 0,
+      "discrepancy_gt_1_percentage_point": 0,
+      "max_discrepancy_percentage_points": 0.09,
+      "large_nav_move_examples": [],
+      "missing_return_examples": [
+        {
+          "date": "2017-12-31T00:00:00.000",
+          "code": "511010",
+          "alias": "CGB_5Y_ETF",
+          "asset_class": "bond_rate_mid",
+          "unit_nav": 109.962,
+          "acc_nav": 1.112,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0245599673
+        },
+        {
+          "date": "2018-06-30T00:00:00.000",
+          "code": "511010",
+          "alias": "CGB_5Y_ETF",
+          "asset_class": "bond_rate_mid",
+          "unit_nav": 112.875,
+          "acc_nav": 1.142,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0876424189,
+          "unit_nav_ret_pct": 0.006201935
+        },
+        {
+          "date": "2018-12-31T00:00:00.000",
+          "code": "511010",
+          "alias": "CGB_5Y_ETF",
+          "asset_class": "bond_rate_mid",
+          "unit_nav": 116.277,
+          "acc_nav": 1.176,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": -0.0309509685
+        },
+        {
+          "date": "2019-06-30T00:00:00.000",
+          "code": "511010",
+          "alias": "CGB_5Y_ETF",
+          "asset_class": "bond_rate_mid",
+          "unit_nav": 117.219,
+          "acc_nav": 1.185,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0145048719
+        }
+      ]
+    },
+    "511090": {
+      "tape_trade_60": "2023-09-06",
+      "tape_trade_61": "2023-09-07",
+      "oos_tape_dates_missing_nav": 0,
+      "oos_tape_dates_missing_provider_return": 0,
+      "nav_first": "2023-05-19",
+      "tape_first": "2023-06-13",
+      "nav_last": "2026-11-20",
+      "nav_non_calendar_rows": 2,
+      "missing_calendar_rows_from_first_nav": 11,
+      "missing_calendar_examples": [
+        "2023-05-22",
+        "2023-05-23",
+        "2023-05-24",
+        "2023-05-25",
+        "2023-05-29",
+        "2023-05-30",
+        "2023-05-31",
+        "2023-06-01",
+        "2023-06-05",
+        "2023-06-07"
+      ],
+      "tape_dates_without_nav_since_first_nav": 0,
+      "discrepancy_gt_0_1_percentage_point": 0,
+      "discrepancy_gt_1_percentage_point": 0,
+      "max_discrepancy_percentage_points": 0.06521246458924046,
+      "large_nav_move_examples": [
+        {
+          "date": "2023-06-02T00:00:00.000",
+          "code": "511090",
+          "alias": "CGB_30Y_ETF",
+          "asset_class": "bond_rate_ultra",
+          "unit_nav": 100.0536,
+          "acc_nav": 1.0005,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0199940018,
+          "unit_nav_ret_pct": 9902.3592922123
+        }
+      ],
+      "missing_return_examples": [
+        {
+          "date": "2023-05-19T00:00:00.000",
+          "code": "511090",
+          "alias": "CGB_30Y_ETF",
+          "asset_class": "bond_rate_ultra",
+          "unit_nav": 1.0001,
+          "acc_nav": 1.0001,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": null,
+          "unit_nav_ret_pct": null
+        },
+        {
+          "date": "2023-05-26T00:00:00.000",
+          "code": "511090",
+          "alias": "CGB_30Y_ETF",
+          "asset_class": "bond_rate_ultra",
+          "unit_nav": 1.0003,
+          "acc_nav": 1.0003,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0199980002,
+          "unit_nav_ret_pct": 0.0199980002
+        },
+        {
+          "date": "2023-06-02T00:00:00.000",
+          "code": "511090",
+          "alias": "CGB_30Y_ETF",
+          "asset_class": "bond_rate_ultra",
+          "unit_nav": 100.0536,
+          "acc_nav": 1.0005,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0199940018,
+          "unit_nav_ret_pct": 9902.3592922123
+        },
+        {
+          "date": "2023-06-06T00:00:00.000",
+          "code": "511090",
+          "alias": "CGB_30Y_ETF",
+          "asset_class": "bond_rate_ultra",
+          "unit_nav": 100.0857,
+          "acc_nav": 1.0009,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.03998001,
+          "unit_nav_ret_pct": 0.0320828036
+        },
+        {
+          "date": "2023-06-09T00:00:00.000",
+          "code": "511090",
+          "alias": "CGB_30Y_ETF",
+          "asset_class": "bond_rate_ultra",
+          "unit_nav": 100.2265,
+          "acc_nav": 1.0023,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.1398741133,
+          "unit_nav_ret_pct": 0.1406794377
+        }
+      ]
+    },
+    "511220": {
+      "tape_trade_60": "2015-03-18",
+      "tape_trade_61": "2015-03-19",
+      "oos_tape_dates_missing_nav": 0,
+      "oos_tape_dates_missing_provider_return": 0,
+      "nav_first": "2015-01-05",
+      "tape_first": "2014-12-16",
+      "nav_last": "2026-11-20",
+      "nav_non_calendar_rows": 8,
+      "missing_calendar_rows_from_first_nav": 0,
+      "missing_calendar_examples": [],
+      "tape_dates_without_nav_since_first_nav": 0,
+      "discrepancy_gt_0_1_percentage_point": 9,
+      "discrepancy_gt_1_percentage_point": 4,
+      "max_discrepancy_percentage_points": 1.51,
+      "large_nav_move_examples": [
+        {
+          "date": "2023-01-13T00:00:00.000",
+          "code": "511220",
+          "alias": "CREDIT_LGFV_ETF",
+          "asset_class": "bond_credit",
+          "unit_nav": 9.6988,
+          "acc_nav": 1.331,
+          "daily_ret_pct": 0.01,
+          "acc_nav_ret_pct": 0.0075137125,
+          "unit_nav_ret_pct": -89.9994019521
+        }
+      ],
+      "missing_return_examples": [
+        {
+          "date": "2017-12-31T00:00:00.000",
+          "code": "511220",
+          "alias": "CREDIT_LGFV_ETF",
+          "asset_class": "bond_credit",
+          "unit_nav": 94.552,
+          "acc_nav": 1.126,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0888888889,
+          "unit_nav_ret_pct": 0.0306803635
+        },
+        {
+          "date": "2018-06-30T00:00:00.000",
+          "code": "511220",
+          "alias": "CREDIT_LGFV_ETF",
+          "asset_class": "bond_credit",
+          "unit_nav": 94.032,
+          "acc_nav": 1.15,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0148907656
+        },
+        {
+          "date": "2018-12-31T00:00:00.000",
+          "code": "511220",
+          "alias": "CREDIT_LGFV_ETF",
+          "asset_class": "bond_credit",
+          "unit_nav": 96.389,
+          "acc_nav": 1.189,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0311335734
+        },
+        {
+          "date": "2019-06-30T00:00:00.000",
+          "code": "511220",
+          "alias": "CREDIT_LGFV_ETF",
+          "asset_class": "bond_credit",
+          "unit_nav": 97.02,
+          "acc_nav": 1.209,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.082781457,
+          "unit_nav_ret_pct": 0.0278370604
+        }
+      ]
+    },
+    "511260": {
+      "tape_trade_60": "2017-11-22",
+      "tape_trade_61": "2017-11-23",
+      "oos_tape_dates_missing_nav": 0,
+      "oos_tape_dates_missing_provider_return": 0,
+      "nav_first": "2017-08-04",
+      "tape_first": "2017-08-24",
+      "nav_last": "2026-11-20",
+      "nav_non_calendar_rows": 7,
+      "missing_calendar_rows_from_first_nav": 10,
+      "missing_calendar_examples": [
+        "2017-08-07",
+        "2017-08-08",
+        "2017-08-09",
+        "2017-08-10",
+        "2017-08-14",
+        "2017-08-15",
+        "2017-08-16",
+        "2017-08-21",
+        "2017-08-22",
+        "2017-08-23"
+      ],
+      "tape_dates_without_nav_since_first_nav": 0,
+      "discrepancy_gt_0_1_percentage_point": 0,
+      "discrepancy_gt_1_percentage_point": 0,
+      "max_discrepancy_percentage_points": 0.09486673247779437,
+      "large_nav_move_examples": [],
+      "missing_return_examples": [
+        {
+          "date": "2017-08-04T00:00:00.000",
+          "code": "511260",
+          "alias": "CGB_10Y_ETF",
+          "asset_class": "bond_rate_long",
+          "unit_nav": 100.02,
+          "acc_nav": 1.0,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": null,
+          "unit_nav_ret_pct": null
+        },
+        {
+          "date": "2017-08-11T00:00:00.000",
+          "code": "511260",
+          "alias": "CGB_10Y_ETF",
+          "asset_class": "bond_rate_long",
+          "unit_nav": 100.079,
+          "acc_nav": 1.001,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.1,
+          "unit_nav_ret_pct": 0.0589882024
+        },
+        {
+          "date": "2017-08-17T00:00:00.000",
+          "code": "511260",
+          "alias": "CGB_10Y_ETF",
+          "asset_class": "bond_rate_long",
+          "unit_nav": 100.225,
+          "acc_nav": 1.002,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0999000999,
+          "unit_nav_ret_pct": 0.145884751
+        },
+        {
+          "date": "2017-08-24T00:00:00.000",
+          "code": "511260",
+          "alias": "CGB_10Y_ETF",
+          "asset_class": "bond_rate_long",
+          "unit_nav": 100.077,
+          "acc_nav": 1.001,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": -0.0998003992,
+          "unit_nav_ret_pct": -0.144678813
+        },
+        {
+          "date": "2017-12-31T00:00:00.000",
+          "code": "511260",
+          "alias": "CGB_10Y_ETF",
+          "asset_class": "bond_rate_long",
+          "unit_nav": 98.449,
+          "acc_nav": 0.984,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0142225834
+        },
+        {
+          "date": "2018-06-30T00:00:00.000",
+          "code": "511260",
+          "alias": "CGB_10Y_ETF",
+          "asset_class": "bond_rate_long",
+          "unit_nav": 102.907,
+          "acc_nav": 1.029,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0068027211
+        },
+        {
+          "date": "2018-12-31T00:00:00.000",
+          "code": "511260",
+          "alias": "CGB_10Y_ETF",
+          "asset_class": "bond_rate_long",
+          "unit_nav": 105.935,
+          "acc_nav": 1.059,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0236049476
+        },
+        {
+          "date": "2019-06-30T00:00:00.000",
+          "code": "511260",
+          "alias": "CGB_10Y_ETF",
+          "asset_class": "bond_rate_long",
+          "unit_nav": 106.523,
+          "acc_nav": 1.065,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0150224868
+        }
+      ]
+    },
+    "511360": {
+      "tape_trade_60": "2020-12-25",
+      "tape_trade_61": "2020-12-28",
+      "oos_tape_dates_missing_nav": 0,
+      "oos_tape_dates_missing_provider_return": 0,
+      "nav_first": "2020-08-03",
+      "tape_first": "2020-09-25",
+      "nav_last": "2026-11-20",
+      "nav_non_calendar_rows": 3,
+      "missing_calendar_rows_from_first_nav": 30,
+      "missing_calendar_examples": [
+        "2020-08-04",
+        "2020-08-05",
+        "2020-08-06",
+        "2020-08-10",
+        "2020-08-11",
+        "2020-08-12",
+        "2020-08-13",
+        "2020-08-17",
+        "2020-08-18",
+        "2020-08-19"
+      ],
+      "tape_dates_without_nav_since_first_nav": 0,
+      "discrepancy_gt_0_1_percentage_point": 0,
+      "discrepancy_gt_1_percentage_point": 0,
+      "max_discrepancy_percentage_points": 0.011225761165214437,
+      "large_nav_move_examples": [
+        {
+          "date": "2020-08-28T00:00:00.000",
+          "code": "511360",
+          "alias": "SHORT_CP_ETF",
+          "asset_class": "bond_short",
+          "unit_nav": 100.0832,
+          "acc_nav": 1.0008,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0199880072,
+          "unit_nav_ret_pct": 9902.3186088347
+        }
+      ],
+      "missing_return_examples": [
+        {
+          "date": "2020-08-03T00:00:00.000",
+          "code": "511360",
+          "alias": "SHORT_CP_ETF",
+          "asset_class": "bond_short",
+          "unit_nav": 1.0,
+          "acc_nav": 1.0,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": null,
+          "unit_nav_ret_pct": null
+        },
+        {
+          "date": "2020-08-07T00:00:00.000",
+          "code": "511360",
+          "alias": "SHORT_CP_ETF",
+          "asset_class": "bond_short",
+          "unit_nav": 1.0001,
+          "acc_nav": 1.0001,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.01,
+          "unit_nav_ret_pct": 0.01
+        },
+        {
+          "date": "2020-08-14T00:00:00.000",
+          "code": "511360",
+          "alias": "SHORT_CP_ETF",
+          "asset_class": "bond_short",
+          "unit_nav": 1.0004,
+          "acc_nav": 1.0004,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0299970003,
+          "unit_nav_ret_pct": 0.0299970003
+        },
+        {
+          "date": "2020-08-21T00:00:00.000",
+          "code": "511360",
+          "alias": "SHORT_CP_ETF",
+          "asset_class": "bond_short",
+          "unit_nav": 1.0006,
+          "acc_nav": 1.0006,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0199920032,
+          "unit_nav_ret_pct": 0.0199920032
+        },
+        {
+          "date": "2020-08-28T00:00:00.000",
+          "code": "511360",
+          "alias": "SHORT_CP_ETF",
+          "asset_class": "bond_short",
+          "unit_nav": 100.0832,
+          "acc_nav": 1.0008,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0199880072,
+          "unit_nav_ret_pct": 9902.3186088347
+        },
+        {
+          "date": "2020-09-04T00:00:00.000",
+          "code": "511360",
+          "alias": "SHORT_CP_ETF",
+          "asset_class": "bond_short",
+          "unit_nav": 100.1204,
+          "acc_nav": 1.0012,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0399680256,
+          "unit_nav_ret_pct": 0.0371690753
+        },
+        {
+          "date": "2020-09-11T00:00:00.000",
+          "code": "511360",
+          "alias": "SHORT_CP_ETF",
+          "asset_class": "bond_short",
+          "unit_nav": 100.1569,
+          "acc_nav": 1.0016,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0399520575,
+          "unit_nav_ret_pct": 0.0364561068
+        },
+        {
+          "date": "2020-09-18T00:00:00.000",
+          "code": "511360",
+          "alias": "SHORT_CP_ETF",
+          "asset_class": "bond_short",
+          "unit_nav": 100.2277,
+          "acc_nav": 1.0023,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0698881789,
+          "unit_nav_ret_pct": 0.0706890888
+        },
+        {
+          "date": "2020-09-24T00:00:00.000",
+          "code": "511360",
+          "alias": "SHORT_CP_ETF",
+          "asset_class": "bond_short",
+          "unit_nav": 100.2644,
+          "acc_nav": 1.0026,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0299311583,
+          "unit_nav_ret_pct": 0.0366166239
+        }
+      ]
+    },
+    "511380": {
+      "tape_trade_60": "2020-07-06",
+      "tape_trade_61": "2020-07-07",
+      "oos_tape_dates_missing_nav": 0,
+      "oos_tape_dates_missing_provider_return": 0,
+      "nav_first": "2020-03-06",
+      "tape_first": "2020-04-07",
+      "nav_last": "2026-11-20",
+      "nav_non_calendar_rows": 3,
+      "missing_calendar_rows_from_first_nav": 15,
+      "missing_calendar_examples": [
+        "2020-03-09",
+        "2020-03-10",
+        "2020-03-11",
+        "2020-03-12",
+        "2020-03-16",
+        "2020-03-17",
+        "2020-03-18",
+        "2020-03-19",
+        "2020-03-23",
+        "2020-03-24"
+      ],
+      "tape_dates_without_nav_since_first_nav": 0,
+      "discrepancy_gt_0_1_percentage_point": 1,
+      "discrepancy_gt_1_percentage_point": 1,
+      "max_discrepancy_percentage_points": 3.526238799959726,
+      "large_nav_move_examples": [
+        {
+          "date": "2020-03-27T00:00:00.000",
+          "code": "511380",
+          "alias": "CONV_BOND_ETF",
+          "asset_class": "convertible",
+          "unit_nav": 9.9326,
+          "acc_nav": 0.9933,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": -0.1608201829,
+          "unit_nav_ret_pct": 898.3515931249
+        }
+      ],
+      "missing_return_examples": [
+        {
+          "date": "2020-03-06T00:00:00.000",
+          "code": "511380",
+          "alias": "CONV_BOND_ETF",
+          "asset_class": "convertible",
+          "unit_nav": 1.0003,
+          "acc_nav": 1.0003,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": null,
+          "unit_nav_ret_pct": null
+        },
+        {
+          "date": "2020-03-13T00:00:00.000",
+          "code": "511380",
+          "alias": "CONV_BOND_ETF",
+          "asset_class": "convertible",
+          "unit_nav": 0.9974,
+          "acc_nav": 0.9974,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": -0.2899130261,
+          "unit_nav_ret_pct": -0.2899130261
+        },
+        {
+          "date": "2020-03-20T00:00:00.000",
+          "code": "511380",
+          "alias": "CONV_BOND_ETF",
+          "asset_class": "convertible",
+          "unit_nav": 0.9949,
+          "acc_nav": 0.9949,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": -0.2506516944,
+          "unit_nav_ret_pct": -0.2506516944
+        },
+        {
+          "date": "2020-03-27T00:00:00.000",
+          "code": "511380",
+          "alias": "CONV_BOND_ETF",
+          "asset_class": "convertible",
+          "unit_nav": 9.9326,
+          "acc_nav": 0.9933,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": -0.1608201829,
+          "unit_nav_ret_pct": 898.3515931249
+        },
+        {
+          "date": "2020-04-03T00:00:00.000",
+          "code": "511380",
+          "alias": "CONV_BOND_ETF",
+          "asset_class": "convertible",
+          "unit_nav": 9.8972,
+          "acc_nav": 0.9897,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 3.6986588433,
+          "unit_nav_ret_pct": 0.0353760474
+        }
+      ]
+    },
+    "511880": {
+      "tape_trade_60": "2013-07-18",
+      "tape_trade_61": "2013-07-19",
+      "oos_tape_dates_missing_nav": 0,
+      "oos_tape_dates_missing_provider_return": 0,
+      "nav_first": "2015-01-05",
+      "tape_first": "2013-04-18",
+      "nav_last": "2026-11-20",
+      "nav_non_calendar_rows": 8,
+      "missing_calendar_rows_from_first_nav": 0,
+      "missing_calendar_examples": [],
+      "tape_dates_without_nav_since_first_nav": 0,
+      "discrepancy_gt_0_1_percentage_point": 8,
+      "discrepancy_gt_1_percentage_point": 7,
+      "max_discrepancy_percentage_points": 2.1411242105594246,
+      "large_nav_move_examples": [],
+      "missing_return_examples": [
+        {
+          "date": "2017-12-31T00:00:00.000",
+          "code": "511880",
+          "alias": "CASH_MMF_ETF",
+          "asset_class": "cash",
+          "unit_nav": 100.162,
+          "acc_nav": 117.043,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0
+        },
+        {
+          "date": "2018-06-30T00:00:00.000",
+          "code": "511880",
+          "alias": "CASH_MMF_ETF",
+          "asset_class": "cash",
+          "unit_nav": 102.122,
+          "acc_nav": 119.003,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0
+        },
+        {
+          "date": "2018-12-31T00:00:00.000",
+          "code": "511880",
+          "alias": "CASH_MMF_ETF",
+          "asset_class": "cash",
+          "unit_nav": 100.125,
+          "acc_nav": 120.509,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0
+        },
+        {
+          "date": "2019-06-30T00:00:00.000",
+          "code": "511880",
+          "alias": "CASH_MMF_ETF",
+          "asset_class": "cash",
+          "unit_nav": 101.43,
+          "acc_nav": 121.814,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0
+        }
+      ]
+    },
+    "518880": {
+      "tape_trade_60": "2013-10-29",
+      "tape_trade_61": "2013-10-30",
+      "oos_tape_dates_missing_nav": 0,
+      "oos_tape_dates_missing_provider_return": 0,
+      "nav_first": "2015-01-05",
+      "tape_first": "2013-07-29",
+      "nav_last": "2026-11-20",
+      "nav_non_calendar_rows": 8,
+      "missing_calendar_rows_from_first_nav": 0,
+      "missing_calendar_examples": [],
+      "tape_dates_without_nav_since_first_nav": 0,
+      "discrepancy_gt_0_1_percentage_point": 2,
+      "discrepancy_gt_1_percentage_point": 0,
+      "max_discrepancy_percentage_points": 0.10386473429951959,
+      "large_nav_move_examples": [
+        {
+          "date": "2026-02-02T00:00:00.000",
+          "code": "518880",
+          "alias": "GOLD_ETF",
+          "asset_class": "gold",
+          "unit_nav": 9.8372,
+          "acc_nav": 3.7147,
+          "daily_ret_pct": -11.51,
+          "acc_nav_ret_pct": -11.5084091667,
+          "unit_nav_ret_pct": -11.5097106156
+        },
+        {
+          "date": "2026-03-23T00:00:00.000",
+          "code": "518880",
+          "alias": "GOLD_ETF",
+          "asset_class": "gold",
+          "unit_nav": 8.8241,
+          "acc_nav": 3.3321,
+          "daily_ret_pct": -11.21,
+          "acc_nav_ret_pct": -11.2102963121,
+          "unit_nav_ret_pct": -11.211172937
+        }
+      ],
+      "missing_return_examples": [
+        {
+          "date": "2017-12-31T00:00:00.000",
+          "code": "518880",
+          "alias": "GOLD_ETF",
+          "asset_class": "gold",
+          "unit_nav": 2.7257,
+          "acc_nav": 1.0293,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0
+        },
+        {
+          "date": "2018-06-30T00:00:00.000",
+          "code": "518880",
+          "alias": "GOLD_ETF",
+          "asset_class": "gold",
+          "unit_nav": 2.6628,
+          "acc_nav": 1.0055,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": 0.0
+        },
+        {
+          "date": "2018-12-31T00:00:00.000",
+          "code": "518880",
+          "alias": "GOLD_ETF",
+          "asset_class": "gold",
+          "unit_nav": 2.8248,
+          "acc_nav": 1.0667,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": 0.0,
+          "unit_nav_ret_pct": -0.0035399483
+        },
+        {
+          "date": "2019-06-30T00:00:00.000",
+          "code": "518880",
+          "alias": "GOLD_ETF",
+          "asset_class": "gold",
+          "unit_nav": 3.1133,
+          "acc_nav": 1.1756,
+          "daily_ret_pct": null,
+          "acc_nav_ret_pct": -0.0085055711,
+          "unit_nav_ret_pct": -0.0032119227
+        }
+      ]
+    }
+  },
+  "bond_30y_missing_by_curve": {
+    "BANK_AAA": 0,
+    "CGB": 0,
+    "MTN_AAA": 2970
+  },
+  "index_coverage": [
+    {
+      "code": "000015",
+      "alias": "SSE_DIVIDEND",
+      "min": "2005-01-04T00:00:00.000",
+      "max": "2026-11-20T00:00:00.000",
+      "size": 5314
+    },
+    {
+      "code": "000300",
+      "alias": "CSI300",
+      "min": "2002-01-04T00:00:00.000",
+      "max": "2026-11-20T00:00:00.000",
+      "size": 6035
+    },
+    {
+      "code": "000905",
+      "alias": "CSI500",
+      "min": "2005-01-04T00:00:00.000",
+      "max": "2026-11-20T00:00:00.000",
+      "size": 5314
+    },
+    {
+      "code": "000906",
+      "alias": "CSI800",
+      "min": "2005-01-04T00:00:00.000",
+      "max": "2026-11-20T00:00:00.000",
+      "size": 5314
+    },
+    {
+      "code": "000922",
+      "alias": "CSI_DIVIDEND",
+      "min": "2005-01-04T00:00:00.000",
+      "max": "2019-01-30T00:00:00.000",
+      "size": 3423
+    },
+    {
+      "code": "399006",
+      "alias": "CHINEXT",
+      "min": "2010-06-01T00:00:00.000",
+      "max": "2026-11-20T00:00:00.000",
+      "size": 4000
+    }
+  ],
+  "pit_checks": {
+    "unique_effective_dates": 40,
+    "repeated_effective_dates": [
+      "2021-06-14",
+      "2021-11-15",
+      "2022-06-13",
+      "2022-08-01"
+    ],
+    "conflicting_sets_for_same_effective_date": 0,
+    "conflicting_names_for_same_effective_date_and_code": 0,
+    "snapshot_sizes": [
+      {
+        "query_date": "2016-01-15T00:00:00.000",
+        "update_date": "2016-01-11T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2016-06-30T00:00:00.000",
+        "update_date": "2016-06-27T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2016-07-15T00:00:00.000",
+        "update_date": "2016-07-11T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2016-12-31T00:00:00.000",
+        "update_date": "2016-12-26T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2017-01-15T00:00:00.000",
+        "update_date": "2017-01-09T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2017-06-30T00:00:00.000",
+        "update_date": "2017-06-26T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2017-07-15T00:00:00.000",
+        "update_date": "2017-07-10T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2017-12-31T00:00:00.000",
+        "update_date": "2017-12-25T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2018-01-15T00:00:00.000",
+        "update_date": "2018-01-15T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2018-06-30T00:00:00.000",
+        "update_date": "2018-06-25T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2018-07-15T00:00:00.000",
+        "update_date": "2018-07-09T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2018-12-31T00:00:00.000",
+        "update_date": "2018-12-24T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2019-01-15T00:00:00.000",
+        "update_date": "2019-01-14T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2019-06-30T00:00:00.000",
+        "update_date": "2019-06-24T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2019-07-15T00:00:00.000",
+        "update_date": "2019-07-15T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2019-12-31T00:00:00.000",
+        "update_date": "2019-12-30T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2020-01-15T00:00:00.000",
+        "update_date": "2020-01-13T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2020-06-30T00:00:00.000",
+        "update_date": "2020-06-29T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2020-07-15T00:00:00.000",
+        "update_date": "2020-07-13T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2020-12-31T00:00:00.000",
+        "update_date": "2020-12-28T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2021-01-15T00:00:00.000",
+        "update_date": "2021-01-11T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2021-06-30T00:00:00.000",
+        "update_date": "2021-06-14T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2021-07-15T00:00:00.000",
+        "update_date": "2021-06-14T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2021-12-31T00:00:00.000",
+        "update_date": "2021-11-15T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2022-01-15T00:00:00.000",
+        "update_date": "2021-11-15T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2022-06-30T00:00:00.000",
+        "update_date": "2022-06-13T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2022-07-15T00:00:00.000",
+        "update_date": "2022-06-13T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2022-12-31T00:00:00.000",
+        "update_date": "2022-08-01T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2023-01-15T00:00:00.000",
+        "update_date": "2022-08-01T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2023-06-30T00:00:00.000",
+        "update_date": "2023-06-26T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2023-07-15T00:00:00.000",
+        "update_date": "2023-07-10T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2023-12-31T00:00:00.000",
+        "update_date": "2023-12-25T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2024-01-15T00:00:00.000",
+        "update_date": "2024-01-15T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2024-06-30T00:00:00.000",
+        "update_date": "2024-06-24T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2024-07-15T00:00:00.000",
+        "update_date": "2024-07-15T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2024-12-31T00:00:00.000",
+        "update_date": "2024-12-30T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2025-01-15T00:00:00.000",
+        "update_date": "2025-01-13T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2025-06-30T00:00:00.000",
+        "update_date": "2025-06-30T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2025-07-15T00:00:00.000",
+        "update_date": "2025-07-14T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2025-12-31T00:00:00.000",
+        "update_date": "2025-12-29T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2026-01-15T00:00:00.000",
+        "update_date": "2026-01-12T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2026-06-30T00:00:00.000",
+        "update_date": "2026-06-29T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2026-07-15T00:00:00.000",
+        "update_date": "2026-07-13T00:00:00.000",
+        "size": 300
+      },
+      {
+        "query_date": "2026-11-20T00:00:00.000",
+        "update_date": "2026-11-16T00:00:00.000",
+        "size": 300
+      }
+    ],
+    "query_before_update": 0,
+    "query_minus_update_days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      16,
+      17,
+      31,
+      32,
+      46,
+      61,
+      152,
+      167
+    ],
+    "industry_missing_for_pit_codes": 0,
+    "industry_blank_for_pit_codes": 22,
+    "equity_missing_for_pit_codes": 0,
+    "valuation_missing_for_pit_codes": 0
+  },
+  "industry_model_provenance": {
+    "static_proxy_enabled": true,
+    "static_proxy_table": "stock_industry.parquet",
+    "source_date_field": "updateDate",
+    "point_in_time_join": "latest available updateDate not later than decision_date",
+    "static_proxy_join": "latest snapshot by code, including labels dated after decisions",
+    "static_proxy_is_point_in_time": false
+  }
+}

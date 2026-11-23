@@ -1,0 +1,158 @@
+
+dates:
+  warmup_start: "2016-12-01"
+  start: "2018-01-02"
+  end: "2026-11-20"
+  periods_per_year: 252
+data:
+  index_code: "000300"
+  macro_lag_days: {pmi: 0, cpi: 12, ppi: 12, money: 15, social: 15, gdp: 20}
+  valuation_max_age_days: 75
+  index_pe_max_age_days: 62
+  etf_seasoning_sessions: 60
+  etf_acc_nav_codes: ["511880"]
+  etf_codes:
+    cash: "511880"
+    cgb5: "511010"
+    cgb10: "511260"
+    credit: "511220"
+    equity: "510300"
+    csi500: "510500"
+    dividend: "510880"
+    gold: "518880"
+    convertible: "511380"
+    short_cp: "511360"
+    cgb30: "511090"
+costs:
+  etf_bps: 3.0
+  stock_commission_bps: 2.5
+  stock_slippage_bps: 5.0
+  stock_sell_tax_old_bps: 10.0
+  stock_sell_tax_new_bps: 5.0
+  stock_sell_tax_change: "2023-08-28"
+equity:
+  factors:
+    - ep_ttm
+    - bp
+    - cfp
+    - implied_roe
+    - cash_earnings_quality
+    - mom_12_1
+    - mom_6_1
+    - rev_20d
+    - dist_52w_high
+    - real_vol_60d
+    - idio_vol_60d
+    - downside_beta_120d
+    - turnover_20d
+    - abn_turnover
+    - amihud_illiq_20d
+    - vol_price_corr_20d
+  windows: {mom_long: 252, mom_medium: 126, mom_skip: 21, short: 20, volatility: 60, downside: 120}
+  min_down_days: 25
+  mad_multiple: 5.0
+  min_industry_count: 8
+  use_static_industry_proxy: true
+  missing_warning_fraction: 0.5
+  min_ic_months: 6
+  train_months: 36
+  ensemble_window_months: 24
+  ensemble_min_months: 12
+  ensemble_prior_weights: [0.60, 0.20, 0.20]
+  ensemble_prior_months: 6
+  ensemble_nonpositive_multiplier: 0.05
+  ensemble_previous_score_weight: 0.25
+  ridge_min_months: 12
+  lightgbm_min_months: 18
+  purge_months: 1
+  ridge_alpha: 2000.0
+  retrain_months: 6
+  max_position: 0.03
+  industry_band: 0.04
+  min_effective_holdings: 40
+  optimizer_turnover_penalty: 0.06
+  monthly_turnover_budget: 0.25
+  top_n: 50
+  execution_lag: 1
+  groups: 5
+  nw_lags: 3
+  frequency_scenarios: {monthly: 1, bimonthly: 2, quarterly: 3}
+  holdings_scenarios: [40, 50, 60]
+  lgbm_params: {n_estimators: 80, learning_rate: 0.02, max_depth: 3, num_leaves: 7, min_child_samples: 120, colsample_bytree: 0.7, subsample: 0.8, subsample_freq: 1, reg_alpha: 1.0, reg_lambda: 15.0}
+bond:
+  maturities: [0.25, 0.5, 1, 3, 5, 7, 10, 30]
+  yield_columns: [y_3m, y_6m, y_1y, y_3y, y_5y, y_7y, y_10y, y_30y]
+  ns_lambda_per_year: 0.7308
+  roll_months: 1
+  signal_history: 756
+  signal_minimum: 252
+  rate_momentum_windows: [20, 60, 120]
+  shibor_window: 60
+  credit_shock_window: 20
+  credit_shock_quantile: 0.95
+  credit_shock_min_bps: 15.0
+  funding_z_gate: 2.0
+  gated_duration_ceiling: 3.5
+  gated_cash_cap: 0.50
+  duration_signal_weights: [0.40, 0.35, 0.25]
+  duration_tolerance_years: 0.75
+  defensive_duration: [2.8, 4.2]
+  offensive_duration: [5.8, 8.5]
+  credit_cap: 0.40
+  credit_gate_cap: 0.05
+  turnover_penalty: 0.012
+  duration_penalty: 0.015
+  pca_min_fit_sessions: 252
+  durations: {cash: 0.1, cgb5: 4.5, cgb10: 7.8, credit: 3.5, short_cp: 0.6, cgb30: 18.0}
+  caps: {cash: 0.30, cgb5: 0.85, cgb10: 0.85, credit: 0.4, short_cp: 0.5, cgb30: 0.25}
+  benchmark_weights: {cgb5: 0.3333333333333333, cgb10: 0.3333333333333333, credit: 0.3333333333333334}
+allocation:
+  cov_window: 180
+  cov_min: 120
+  erp_windows_years: [3, 5]
+  erp_min: 252
+  macro_window_months: 60
+  macro_min_months: 24
+  social_max_age_days: 120
+  funding_change_months: 3
+  static_balanced_equity_weight: 0.60
+  regime_model_min_months: 24
+  regime_memory: 0.35
+  regime_temperature: 0.85
+  risk_aversion: 5.0
+  tau: 0.05
+  confidence_scale: 1.0
+  confidence_bounds: [0.16, 0.72]
+  return_view_amplitude: {equity: 0.045, gold: 0.015, convertible: 0.025}
+  strategic_equity_weight: 0.20
+  balanced_strategic_equity_weight: 0.40
+  tactical_bounds: [0.05, 0.35]
+  balanced_bounds: [0.15, 0.65]
+  satellite_caps: {convertible: 0.10, gold: 0.12}
+  turnover_penalty: 0.0015
+  target_vol: 0.045
+  balanced_target_vol: 0.090
+  vol_window: 60
+  drawdown_window: 252
+  drawdown_thresholds: [0.035, 0.060]
+  drawdown_scale: [0.70, 0.40]
+  overlay_release_to_cash: 0.50
+  overlay_recovery_step: 0.10
+  overlay_trade_band: 0.05
+  flagship_max_mean_cash: 0.50
+  risk_aversion_grid: [2.5, 5.0, 10.0]
+  tau_grid: [0.02, 0.05, 0.10]
+analytics:
+  seed: 20261123
+  bootstrap_draws: 1000
+  bootstrap_block: 21
+  var_levels: [0.95, 0.99]
+  cost_multipliers: [0.5, 1.0, 2.0]
+  stress_windows:
+    deleveraging_2018: ["2018-01-02", "2018-12-31"]
+    covid_q1_2020: ["2020-01-01", "2020-03-31"]
+    bond_bear_2020: ["2020-05-01", "2020-11-30"]
+    stocks_bonds_2022: ["2022-01-01", "2022-12-31"]
+    redemption_2022: ["2022-11-01", "2022-12-15"]
+    reversal_2024: ["2024-09-20", "2024-10-15"]
+    low_rate_2025_26: ["2025-01-01", "2026-11-20"]

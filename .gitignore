@@ -1,0 +1,33 @@
+# Python & Virtual Environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter & IDEs
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# OS & Temporary Files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Large binary market data & generated parquet caches (reproducible via scripts/fetch_data.py & run_pipeline.py)
+/data/raw/*.parquet
+/data/raw/manifest.json
+/data/raw/_equity_chunks/
+/data/processed/
+/outputs/*.parquet
+
+# Local personal notes
+/reports/private/

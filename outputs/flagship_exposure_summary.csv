@@ -1,0 +1,7 @@
+layer,asset,mean_weight
+top_level,equity,0.19344093117360234
+top_level,bond,0.8045833684498126
+top_level,cash,0.001975700376585133
+lookthrough,equity,0.19344092044551883
+lookthrough,bond,0.6446009274233799
+lookthrough,cash,0.16195815213110124

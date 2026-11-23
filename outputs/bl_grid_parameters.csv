@@ -1,0 +1,10 @@
+strategy,delta,tau
+BL_delta_2.5_tau_0.02,2.5,0.02
+BL_delta_2.5_tau_0.05,2.5,0.05
+BL_delta_2.5_tau_0.1,2.5,0.1
+BL_delta_5_tau_0.02,5.0,0.02
+BL_delta_5_tau_0.05,5.0,0.05
+BL_delta_5_tau_0.1,5.0,0.1
+BL_delta_10_tau_0.02,10.0,0.02
+BL_delta_10_tau_0.05,10.0,0.05
+BL_delta_10_tau_0.1,10.0,0.1

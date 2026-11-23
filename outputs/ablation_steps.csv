@@ -1,0 +1,7 @@
+step,strategy
+0,Static_20_80
+1,Macro_BL_Passive
+2,Macro_BL_Bond_Active
+3,Macro_BL_Equity_Bond_Active
+4,Macro_BL_FixedIncomePlus
+5,Macro_BL_Satellites
